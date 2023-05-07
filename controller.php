@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($result) {
             echo "Entry created successfully.";
             header ("location: index.php");
+            exit();
         } else {
             echo "Error creating entry.";
         }
